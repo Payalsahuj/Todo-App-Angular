@@ -1,0 +1,23 @@
+<style>
+  #navbar{
+    background-color: #B0BEC5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1%;
+  }
+  #navbar a{
+    margin: 1%;
+    text-decoration: none;
+    font-family: sans-serif;
+  }
+</style>
+<nav id="navbar">
+  <a routerLink="/">Todo List</a>
+  
+  <a routerLink="/create">Create Todo</a>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+

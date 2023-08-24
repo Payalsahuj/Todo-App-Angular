@@ -1,0 +1,19 @@
+
+<div class="todo-item">
+    <div>
+    <input type="checkbox" [checked]="todo.completed" (change)="markAsCompleted(todo)">
+    </div>
+    <div>
+    <p>{{ todo.title }}</p>
+    </div>
+    <div>
+        <p>{{todo.description}}</p>
+    </div>
+    <div>
+        <button (click)="deleteTodo(todo.id)">Edit list</button>
+    </div>
+    <div>
+        <button (click)="updateTodo(todo)">Delete</button>
+    </div>
+  </div>
+  
